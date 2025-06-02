@@ -1,6 +1,6 @@
 This directory contains:
 
-src - directory containing the source for lsb_release 
+src - directory containing the source for lsb_release
 lsb-release.spec - the spec file for generating RPM packages for lsb_release
 debian - directory containing the necessary configuration files for
          generating a deb packages for lsb_release
@@ -9,10 +9,10 @@ debian - directory containing the necessary configuration files for
 Generating a release
 --------------------
 
-The man page for lsb_release is automatically created by a modified
-version of the help2man program when the packages are constructed. The
-Makefile in the src subdirectory contains the command line arguments
-needed. The modified version of help2mn is included in this package.
+The man page for lsb_release is automatically created by the help2man
+program when the packages are constructed. Please ensure that the
+program is available on the build system. The Makefile in the src
+subdirectory contains the command line arguments needed.
 
 1. Checkout a tagged release (eg Release_1_1) or a snapshot
 
